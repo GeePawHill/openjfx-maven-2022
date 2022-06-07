@@ -1,1 +1,31 @@
-# First README
+# OpenJfx + Maven + IntelliJ 2022
+
+This is a starter project. It includes one JavaFx application in `Main`, and a single and meaningless -- but runnable JUnit 5 test.
+
+This is for:
+
+* OpenJdk 18
+* OpenJfx 18
+* Junit 5.8.1
+* AssertJ 3.23
+
+It includes two run configurations, "test" and "run", which do just about what you think.
+
+The key "support files":
+
+*    pom.xml
+**        Includes the openjfx plugin
+* module-info.java
+**        This file is required to allow intellij to do "native" runs.
+* The Run Configurations
+** These are in .../.idea/runConfigurations/
+** run.xml
+** test.xml
+
+In theory, this project will run out of the box, assuming you have OpenJDK installed and either Maven installed or the intellij maven built-in turned on.
+
+## Using for a new project
+
+### pom.xml
+
+You'll have to edit
